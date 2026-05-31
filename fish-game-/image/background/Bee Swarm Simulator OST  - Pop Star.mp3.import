@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://day3gr32a8fet"
+path="res://.godot/imported/Bee Swarm Simulator OST  - Pop Star.mp3-793627665cf868c565cad99dadf2e251.mp3str"
+
+[deps]
+
+source_file="res://image/background/Bee Swarm Simulator OST  - Pop Star.mp3"
+dest_files=["res://.godot/imported/Bee Swarm Simulator OST  - Pop Star.mp3-793627665cf868c565cad99dadf2e251.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

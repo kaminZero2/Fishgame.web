@@ -1,0 +1,245 @@
+[gd_scene format=3 uid="uid://cr6vn553ugut2"]
+
+[ext_resource type="Script" uid="uid://cpmmlyiyl6121" path="res://body script/player.gd" id="1_qupgy"]
+[ext_resource type="Resource" uid="uid://b5465i78qruy0" path="res://itemdata/playerinv.tres" id="2_8dtag"]
+[ext_resource type="Texture2D" uid="uid://bumkr7j1ymuwg" path="res://image/player/box catanimaion-Sheet-Sheet-Sheet.png" id="2_qupgy"]
+[ext_resource type="Texture2D" uid="uid://dasds6ypgbaeb" path="res://gobal/fishing rod.png" id="2_sl3or"]
+[ext_resource type="Texture2D" uid="uid://cr0dovnw6ofkf" path="res://gobal/fishing rod3.png" id="3_b6ara"]
+[ext_resource type="Texture2D" uid="uid://ucrbbolwcmyd" path="res://gobal/fishing rod2.png" id="4_b23nh"]
+[ext_resource type="PackedScene" uid="uid://biwc7u0tf5fjo" path="res://inv_ui.tscn" id="7_v0qc5"]
+
+[sub_resource type="Animation" id="Animation_b6ara"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_b23nh"]
+resource_name = "fishing_rod"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8333333, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 1.680756, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8dtag"]
+_data = {
+&"RESET": SubResource("Animation_b6ara"),
+&"fishing_rod": SubResource("Animation_b23nh")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(24, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sl3or"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b6ara"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b23nh"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8dtag"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qupgy"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0qc5"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhqt8"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qq38a"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gojj5"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7qkf"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_380kw"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bsw7m"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ol8b7"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5035t"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qda02"]
+atlas = ExtResource("2_qupgy")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v0qc5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sl3or")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b6ara")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b23nh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8dtag")
+}],
+"loop": true,
+"name": &"down",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qupgy")
+}],
+"loop": true,
+"name": &"down_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0qc5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhqt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qq38a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gojj5")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k7qkf")
+}],
+"loop": true,
+"name": &"right_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_380kw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bsw7m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ol8b7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5035t")
+}],
+"loop": true,
+"name": &"up",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qda02")
+}],
+"loop": true,
+"name": &"up_idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qupgy"]
+size = Vector2(30, 33)
+
+[node name="player" type="CharacterBody2D" unique_id=953888532]
+scale = Vector2(0.65865165, 0.65865165)
+script = ExtResource("1_qupgy")
+inv = ExtResource("2_8dtag")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=268719723]
+scale = Vector2(1.4965253, 1.4965253)
+
+[node name="FishingRod" type="Sprite2D" parent="Node2D" unique_id=705633223]
+position = Vector2(-8.116, 8.116)
+rotation = -1.579523
+texture = ExtResource("2_sl3or")
+flip_h = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D" unique_id=2125264516]
+libraries/ = SubResource("AnimationLibrary_8dtag")
+
+[node name="FishingRod3" type="Sprite2D" parent="Node2D" unique_id=1445080086]
+visible = false
+z_index = 10
+scale = Vector2(0.47642362, 0.47642362)
+texture = ExtResource("3_b6ara")
+
+[node name="FishingRod2" type="Sprite2D" parent="Node2D" unique_id=1866273984]
+visible = false
+position = Vector2(-8.116, 8.116)
+rotation = 1.5760323
+texture = ExtResource("4_b23nh")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=204141248]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1446878391]
+zoom = Vector2(2.99, 2.99)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2076531424]
+sprite_frames = SubResource("SpriteFrames_v0qc5")
+animation = &"down_idle"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1096477077]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=468496674]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_qupgy")
+
+[node name="Inv_UI" parent="." unique_id=409958385 instance=ExtResource("7_v0qc5")]
+z_index = 3
+offset_left = -81.98567
+offset_top = -133.6063
+offset_right = 83.01433
+offset_bottom = -18.606293
+
+[connection signal="animation_finished" from="Node2D/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

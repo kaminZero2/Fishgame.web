@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://c120mk5lph2ce"]
+
+[ext_resource type="FontFile" uid="uid://d1mowonf07wv5" path="res://image/background/KiwiSoda.ttf" id="1_se8ut"]
+[ext_resource type="Script" uid="uid://he5wh4sywqhf" path="res://audiocontrol.gd" id="2_ao2gm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uchyk"]
+bg_color = Color(0.4626965, 0.60438937, 0.34698007, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.100482635, 0.19552353, 0.1097231, 0.6)
+shadow_size = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62e2m"]
+bg_color = Color(0.3331598, 0.44495487, 0.23872504, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.100482635, 0.19552353, 0.1097231, 0.6)
+shadow_size = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qtu10"]
+bg_color = Color(0.28782904, 0.38761848, 0.20330188, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.100482635, 0.19552353, 0.1097231, 0.6)
+shadow_size = 4
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ee4bf"]
+color = Color(0.8462767, 0.976525, 0.79345506, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_kbped"]
+color = Color(0.23401287, 0.6060632, 0.30314833, 1)
+thickness = 6
+
+[node name="Options" type="Panel" unique_id=780683392]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -298.0
+offset_top = -191.5
+offset_right = 298.0
+offset_bottom = 191.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=1423781554]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.0
+offset_top = -174.0
+offset_right = 72.0
+offset_bottom = -126.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.87344706, 0.36320215, 0.40103117, 1)
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = ExtResource("1_se8ut")
+theme_override_font_sizes/font_size = 48
+text = "Options"
+
+[node name="music setting" type="Label" parent="." unique_id=758534617]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 91.5
+offset_right = 249.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0.4829749, 0.8720339, 0.50867075, 1)
+theme_override_fonts/font = ExtResource("1_se8ut")
+theme_override_font_sizes/font_size = 35
+text = "Music"
+
+[node name="Button3" type="Button" parent="." unique_id=2146258323]
+layout_mode = 0
+offset_left = 459.0
+offset_top = 332.5
+offset_right = 577.0
+offset_bottom = 374.5
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.73333335, 1, 0.4392157, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_uchyk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_62e2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qtu10")
+text = "Back"
+
+[node name="audiocontrol" type="HSlider" parent="." unique_id=170888522]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 83.5
+offset_right = 547.0
+offset_bottom = 134.0
+theme_override_styles/slider = SubResource("StyleBoxLine_ee4bf")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_kbped")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("2_ao2gm")
+audio_bus_name = "Music"
+
+[connection signal="pressed" from="Button3" to="audiocontrol" method="_on_options_pressed"]
+[connection signal="value_changed" from="audiocontrol" to="audiocontrol" method="_on_value_changed"]

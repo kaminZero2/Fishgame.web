@@ -1,0 +1,25 @@
+res://body script/item.tscn::cf7354d4626d85171b82cc48ca526662::1780234700::res://.godot/exported/133200997/export-f9fb693e2fa332e056244c5d401c4eab-item.scn
+res://body script/player.tscn::6f8b5a76c9d5b3ddf3245bc296468a02::1780234700::res://.godot/exported/133200997/export-0e68a6154c621d478fb82d1ca8cf9cb4-player.scn
+res://image/background/node_2d test.tscn::bcf3b5311f259eb0a98b62015214bb6d::1780234700::res://.godot/exported/133200997/export-0437de5da053339257a6db7909c583ac-node_2d test.scn
+res://itemdata/fish1.tres::e98958e7eacd95d27db80f2052fbafdb::1780234700::res://.godot/exported/133200997/export-7d6926c71d8c211781d164050854094f-fish1.res
+res://itemdata/fish2.tres::3b8fec8517e1bdfb8485eab6bec025e9::1780234700::res://.godot/exported/133200997/export-7f19c022ac33282e6ceeb247905d88b9-fish2.res
+res://itemdata/fish3.tres::d5db2d95e897abbee00e0813e2083070::1780234700::res://.godot/exported/133200997/export-0754eeb73c44fc619ca35320359b89bf-fish3.res
+res://itemdata/fish4.tres::af7091f39043d7b889b27bfb119e1891::1780234700::res://.godot/exported/133200997/export-19a998f383c4bf62c6ad2e1a56dedcd4-fish4.res
+res://itemdata/fish5.tres::9dd80c635b8f09dbbd4586a0313a04c3::1780234700::res://.godot/exported/133200997/export-9cccb1846b08b173756d20d7fa64e11a-fish5.res
+res://itemdata/fish6.tres::341e5de6f2b24444ec6b74f1a5ef5d4f::1780234700::res://.godot/exported/133200997/export-cd6a36bd95807e86a11ab0881579f32b-fish6.res
+res://itemdata/fish7.tres::6fc4d6e64ef0317132210efec20fca46::1780234700::res://.godot/exported/133200997/export-62c3d046a28af8d6c6fefa09120af724-fish7.res
+res://itemdata/playerinv.tres::154c3cc5523361436579015000d19a9f::1780234700::res://.godot/exported/133200997/export-a05e7923085a3234d250ca1ee47481db-playerinv.res
+res://coin.tscn::6c33cd0150050fa84bf9a7d860347023::1780234698::res://.godot/exported/133200997/export-2c627f0aeee2256356f1e6ba540049dd-coin.scn
+res://control.tscn::4067a31b22121c1f7e246b2c23cd8bdb::1780234698::res://.godot/exported/133200997/export-e66311c87c39ec8c25379305b5ae724b-control.scn
+res://default_bus_layout.tres::9d47000b8eef022e15b4a59de279ce42::1780234698::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
+res://fishingmap.tscn::ac02d567a862682ce3e7452d116e5ecc::1780234698::res://.godot/exported/133200997/export-ae406c8042fbae24157db30c2b2c44b9-fishingmap.scn
+res://inv_ui.tscn::f8777581b38031464e8acb7a99332562::1780234698::res://.godot/exported/133200997/export-7e008fb9e30351e36eb8f65f85d21870-inv_ui.scn
+res://inv_ui_slot.tscn::1cb522800f24d66f355325e2df601271::1780234698::res://.godot/exported/133200997/export-9dc2c39241684ba1066d9f5347533639-inv_ui_slot.scn
+res://item_data.tscn::8f88c968ce61231161aeb0b102e3ce7b::1780234698::res://.godot/exported/133200997/export-fbec1afb0dca272574ca02414ca0099e-item_data.scn
+res://minigame.tscn::3c3b74956b03fb6c5756185b9b12baae::1780234698::res://.godot/exported/133200997/export-31c7d0ee4183c7371627e88084a8f915-minigame.scn
+res://miss1.tres::80bb76b53ee7a121ab0625bd9771f5d4::1780234698::res://.godot/exported/133200997/export-36851fe14debbe04451c71378654efb4-miss1.res
+res://miss2.tres::00027a246bdcd85fc85da43c568f178d::1780234698::res://.godot/exported/133200997/export-598c4785d093a2f81a260b2e6aafc25b-miss2.res
+res://options.tscn::348f36afb4f51d9a01d91316f7446387::1780234698::res://.godot/exported/133200997/export-81d5e5f4d8ea6b28f46e73e417c2a457-options.scn
+res://shopmenu.tscn::059cdc466838a5e742bca637f421cce1::1780234698::res://.godot/exported/133200997/export-8efa92d587c7cf16f7375d9a59758869-shopmenu.scn
+res://shop_area.tscn::6a82668df64cffa3a17196df8f968ad0::1780234698::res://.godot/exported/133200997/export-c41554217239b45dcdacba89eda2f0a7-shop_area.scn
+res://tile_map.tscn::4dac070619c105171a3bef689b781c05::1780234698::res://.godot/exported/133200997/export-22792ee0018d439a895e1f6e6e7db267-tile_map.scn

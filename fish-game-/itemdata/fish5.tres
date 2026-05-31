@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="item" format=3 uid="uid://cg5msmteajq2a"]
+
+[ext_resource type="Texture2D" uid="uid://5t8xycy0g2i2" path="res://image/background/sea/Elder_Dragonfish.png" id="1_kvvij"]
+[ext_resource type="Script" uid="uid://dhr1m3pgc634d" path="res://new_script.gd" id="1_pl3yw"]
+
+[resource]
+script = ExtResource("1_pl3yw")
+image = ExtResource("1_kvvij")
+num = 30
+metadata/_custom_type_script = "uid://dhr1m3pgc634d"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="item" format=3 uid="uid://btlrwa4ykr1gb"]
+
+[ext_resource type="Texture2D" uid="uid://ct28lp41c4vft" path="res://image/background/sea/Black_Steel_Urchin.png" id="1_g1ahy"]
+[ext_resource type="Script" uid="uid://dhr1m3pgc634d" path="res://new_script.gd" id="1_wdw7g"]
+
+[resource]
+script = ExtResource("1_wdw7g")
+image = ExtResource("1_g1ahy")
+num = 5
+metadata/_custom_type_script = "uid://dhr1m3pgc634d"

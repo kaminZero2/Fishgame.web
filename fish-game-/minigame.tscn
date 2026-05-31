@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://yuw2s1fccx8l"]
+
+[ext_resource type="Script" uid="uid://c6shywyd75ubs" path="res://minigame.gd" id="1_k7ghj"]
+[ext_resource type="Texture2D" uid="uid://bbiupif40gi5x" path="res://gobal/Sprite-0005.png" id="2_gdft7"]
+[ext_resource type="Texture2D" uid="uid://h1kcpmpa4i36" path="res://gobal/Sprite-0003.png" id="4_176e0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gdft7"]
+size = Vector2(20, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oemwr"]
+size = Vector2(8, 23)
+
+[node name="minigame" type="Node2D" unique_id=309627829]
+script = ExtResource("1_k7ghj")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1152321019]
+
+[node name="Sprite0005" type="Sprite2D" parent="Node2D" unique_id=1778243344]
+texture = ExtResource("2_gdft7")
+
+[node name="Area hitbox" type="Area2D" parent="Node2D" unique_id=329698600]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Area hitbox" unique_id=829686591]
+position = Vector2(0, -30.5)
+shape = SubResource("RectangleShape2D_gdft7")
+
+[node name="arrow" type="Node2D" parent="." unique_id=214617591]
+
+[node name="Sprite0003" type="Sprite2D" parent="arrow" unique_id=1021940508]
+position = Vector2(0, -47)
+texture = ExtResource("4_176e0")
+
+[node name="Area arrow" type="Area2D" parent="arrow" unique_id=1081317140]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arrow/Area arrow" unique_id=883687299]
+position = Vector2(0, -46.5)
+shape = SubResource("RectangleShape2D_oemwr")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=482480593]
+zoom = Vector2(2.05, 2.05)
+
+[node name="Timer" type="Timer" parent="." unique_id=559989507]
+
+[connection signal="area_entered" from="Node2D/Area hitbox" to="." method="_on_area_hitbox_area_entered"]
+[connection signal="area_exited" from="Node2D/Area hitbox" to="." method="_on_area_hitbox_area_exited"]

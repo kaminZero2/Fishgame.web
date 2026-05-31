@@ -1,0 +1,15 @@
+Label
+ColorRect
+Button
+RichTextLabel
+AnimatedSprite2D
+Sprite2D
+StaticBody2D
+CollisionShape2D
+Area2D
+Panel
+CenterContainer
+GridContainer
+NinePatchRect
+Camera2D
+AnimationPlayer

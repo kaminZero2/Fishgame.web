@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cy3n1y74ba003"]
+
+[ext_resource type="Script" uid="uid://dqid6gd7mupho" path="res://node_2d_test.gd" id="1_8ogl2"]
+[ext_resource type="Texture2D" uid="uid://bjccwyb2iqf3j" path="res://icon.svg" id="3_imxpo"]
+[ext_resource type="Script" uid="uid://d0531pw8c0hhw" path="res://fishing_area.gd" id="4_imxpo"]
+[ext_resource type="PackedScene" uid="uid://cr6vn553ugut2" path="res://body script/player.tscn" id="4_vt8qf"]
+
+[node name="Node2D" type="Node2D" unique_id=1372260825]
+script = ExtResource("1_8ogl2")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1310810921]
+position = Vector2(25, 13)
+texture = ExtResource("3_imxpo")
+
+[node name="player" parent="." unique_id=953888532 instance=ExtResource("4_vt8qf")]
+
+[node name="fishing area" type="Area2D" parent="." unique_id=1497623876]
+script = ExtResource("4_imxpo")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="fishing area" unique_id=1681790115]
+position = Vector2(-51, 0)
+polygon = PackedVector2Array(-45, -8, -58, 51, -9, 44, -24, -14, -35, -18)
+
+[connection signal="area_entered" from="fishing area" to="fishing area" method="_on_area_entered"]
+[connection signal="area_exited" from="fishing area" to="fishing area" method="_on_area_exited"]

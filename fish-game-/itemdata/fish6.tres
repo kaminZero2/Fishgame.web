@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="item" format=3 uid="uid://cywwgcyucewyr"]
+
+[ext_resource type="Script" uid="uid://dhr1m3pgc634d" path="res://new_script.gd" id="1_8esw3"]
+[ext_resource type="Texture2D" uid="uid://bb12tghg7o5w4" path="res://image/background/sea/Bright_Lava_Eater.png" id="1_cjiy4"]
+
+[resource]
+script = ExtResource("1_8esw3")
+image = ExtResource("1_cjiy4")
+num = 25
+metadata/_custom_type_script = "uid://dhr1m3pgc634d"

@@ -1,0 +1,199 @@
+[gd_scene format=3 uid="uid://kjra663hhrqg"]
+
+[ext_resource type="Texture2D" uid="uid://d37k3penbd5t1" path="res://image/background/simple-fishing-background-free-vector.png" id="1_62e2m"]
+[ext_resource type="Script" uid="uid://dp8tocdb0entf" path="res://control.gd" id="1_qtu10"]
+[ext_resource type="FontFile" uid="uid://d1mowonf07wv5" path="res://image/background/KiwiSoda.ttf" id="2_qtu10"]
+[ext_resource type="AudioStream" uid="uid://day3gr32a8fet" path="res://image/background/Bee Swarm Simulator OST  - Pop Star.mp3" id="4_kbped"]
+[ext_resource type="PackedScene" uid="uid://c120mk5lph2ce" path="res://options.tscn" id="5_kbped"]
+
+[sub_resource type="Shader" id="Shader_kbped"]
+code = "shader_type canvas_item;
+
+uniform sampler2D noise_1: repeat_enable;
+uniform sampler2D noise_2: repeat_enable;
+uniform vec2 scroll_1 = vec2(0.05,0.05);
+uniform vec2 scroll_2 = vec2(-0.05,-0.05);
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+uniform float distortion_strength : hint_range(-1,1) = 0.2;
+uniform vec4 tone_color : source_color;
+uniform vec4 top_color  : source_color;
+uniform float light_start : hint_range(0.0, 1.0) = 0.275;
+uniform float light_end : hint_range(0.0, 1.0) = 0.4;
+
+
+void fragment() {
+	float depth = texture(noise_1, UV + scroll_1 * TIME).r * texture(noise_2, UV + scroll_2 * TIME).r;
+	vec4 screen_col = texture(SCREEN_TEXTURE, SCREEN_UV + distortion_strength * vec2(depth));
+	//vec4 noise_col = texture(noise, UV + scroll * TIME);
+	//vec4 screen_col = texture(SCREEN_TEXTURE, SCREEN_UV + distortion_strength * noise_col.rr);
+	vec4 top_light = smoothstep(light_start, light_end,depth) * top_color;
+	COLOR = screen_col * tone_color + top_light;
+	COLOR.a = 1.0;
+}
+
+"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_fj5cn"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_8apuv"]
+noise = SubResource("FastNoiseLite_fj5cn")
+seamless = true
+as_normal_map = true
+bump_strength = 32.0
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_iy58a"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_e1yp1"]
+noise = SubResource("FastNoiseLite_iy58a")
+seamless = true
+as_normal_map = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6a6wx"]
+shader = SubResource("Shader_kbped")
+shader_parameter/noise_1 = SubResource("NoiseTexture2D_8apuv")
+shader_parameter/noise_2 = SubResource("NoiseTexture2D_e1yp1")
+shader_parameter/scroll_1 = Vector2(0.05, 0)
+shader_parameter/scroll_2 = Vector2(0, 0)
+shader_parameter/distortion_strength = -0.019999953450000052
+shader_parameter/tone_color = Color(0.7019608, 0.96862745, 0.96862745, 1)
+shader_parameter/top_color = Color(0.06855669, 0.1393699, 0.14928386, 1)
+shader_parameter/light_start = 0.0
+shader_parameter/light_end = 0.6470000307325
+
+[sub_resource type="Gradient" id="Gradient_r68nm"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_sky72"]
+gradient = SubResource("Gradient_r68nm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ee4bf"]
+texture = ExtResource("1_62e2m")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uchyk"]
+bg_color = Color(0.4626965, 0.60438937, 0.34698007, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.100482635, 0.19552353, 0.1097231, 0.6)
+shadow_size = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62e2m"]
+bg_color = Color(0.3331598, 0.44495487, 0.23872504, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.100482635, 0.19552353, 0.1097231, 0.6)
+shadow_size = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qtu10"]
+bg_color = Color(0.28782904, 0.38761848, 0.20330188, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.100482635, 0.19552353, 0.1097231, 0.6)
+shadow_size = 4
+
+[node name="Control" type="Control" unique_id=939854361]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qtu10")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1449796474]
+material = SubResource("ShaderMaterial_6a6wx")
+position = Vector2(616, 358)
+scale = Vector2(22.46875, 14.093751)
+texture = SubResource("GradientTexture2D_sky72")
+
+[node name="Panel" type="Panel" parent="." unique_id=603799668]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ee4bf")
+
+[node name="Label" type="Label" parent="." unique_id=591202977]
+layout_mode = 0
+offset_left = 563.0
+offset_top = 69.0
+offset_right = 1213.0
+offset_bottom = 249.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 5
+theme_override_fonts/font = ExtResource("2_qtu10")
+theme_override_font_sizes/font_size = 89
+text = "Box cat Fishing"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1424487056]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 429.0
+offset_right = 448.0
+offset_bottom = 627.0
+theme_override_constants/separation = 9
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=23785177]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.73333335, 1, 0.4392157, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_uchyk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_62e2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qtu10")
+text = "Start game"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1114948651]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.73333335, 1, 0.4392157, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_uchyk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_62e2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qtu10")
+text = "Options"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=7641354]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.73333335, 1, 0.4392157, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_uchyk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_62e2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qtu10")
+text = "Exit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=791580065]
+stream = ExtResource("4_kbped")
+volume_db = -10.0
+autoplay = true
+bus = &"Music"
+parameters/looping = true
+
+[node name="Options" parent="." unique_id=780683392 instance=ExtResource("5_kbped")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 277.0
+offset_top = 141.0
+offset_right = 873.0
+offset_bottom = 524.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_pressed"]

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bnr6ppau30y2q"]
+
+[ext_resource type="Script" uid="uid://b6dki1swg3o4g" path="res://shop_area.gd" id="1_xd0lc"]
+[ext_resource type="PackedScene" uid="uid://3ymjk8x5r1sw" path="res://shopmenu.tscn" id="3_7mmkt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xehpp"]
+
+[node name="shop_area" type="Node2D" unique_id=1686998843]
+script = ExtResource("1_xd0lc")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=422974551]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=915392839]
+scale = Vector2(-3.7997613, -3.7997613)
+shape = SubResource("CircleShape2D_xehpp")
+
+[node name="shopmenu" parent="." unique_id=783924605 instance=ExtResource("3_7mmkt")]
+position = Vector2(-50, -99.99999)
+scale = Vector2(0.5786329, 0.66863465)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

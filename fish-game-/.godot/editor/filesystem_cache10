@@ -1,0 +1,96 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1780236813
+area_2d.gd::GDScript::6608740706684982799::1780234698::0::1::::<>Area2D<><>0<>0<><>::
+arrow.gd::GDScript::8431802342951443787::1780234698::0::1::::<>Node2D<><>0<>0<><>::
+audiocontrol.gd::GDScript::501440627044939619::1780234698::0::1::::<>HSlider<><>0<>0<><>::
+Beryll_Angle_Fish.png::CompressedTexture2D::7059469566888815702::1780234698::1780234698::1::::<><><>0<>0<>a1708c0b613da6397812877226ee8c6b<>res://.godot/imported/Beryll_Angle_Fish.png-b337771ddd0a9b771b2ca62efb345044.ctex::
+coin.gd::GDScript::8004643500793961905::1780234698::0::1::::<>Control<><>0<>0<><>::
+coin.tscn::PackedScene::6896765151184307794::1780234698::0::1::::<><><>0<>0<><>::uid://dmbrkrftc5218::::res://coin.gd
+control.gd::GDScript::8281397905271123151::1780234698::0::1::::<>Control<><>0<>0<><>::
+control.tscn::PackedScene::721501702438524626::1780234698::0::1::::<><><>0<>0<><>::uid://d37k3penbd5t1::::res://image/background/simple-fishing-background-free-vector.png<>uid://dp8tocdb0entf::::res://control.gd<>uid://d1mowonf07wv5::::res://image/background/KiwiSoda.ttf<>uid://day3gr32a8fet::::res://image/background/Bee Swarm Simulator OST  - Pop Star.mp3<>uid://c120mk5lph2ce::::res://options.tscn
+default_bus_layout.tres::AudioBusLayout::170133431758790791::1780234698::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1780236813::0::1::::<><><>0<>0<><>::
+fishingmap.gd::GDScript::8248746402322613343::1780234698::0::1::::<>Node2D<><>0<>0<><>::
+fishingmap.tscn::PackedScene::2503905745689195163::1780234698::0::1::::<><><>0<>0<><>::uid://cxnnyrmnovife::::res://image/background/sea/Beryll_Angle_Fish.png<>uid://ugocffqt61n::::res://image/background/Solaria Demo Tiles.png<>uid://jbfxga6qs5kk::::res://miss2.tres<>uid://dpr0wbgrdd3w2::::res://fishingmap.gd<>uid://dmnbqlje31d5o::::res://image/background/distortion.gdshader<>uid://ct28lp41c4vft::::res://image/background/sea/Black_Steel_Urchin.png<>uid://cr6vn553ugut2::::res://body script/player.tscn<>uid://i12e6jts6com::::res://image/background/sea/2.png<>uid://b4dlv3e1eug06::::res://image/background/sea/3.png<>uid://y8af0gkw12uc::::res://image/background/sea/6.png<>uid://day3gr32a8fet::::res://image/background/Bee Swarm Simulator OST  - Pop Star.mp3<>uid://c120mk5lph2ce::::res://options.tscn<>uid://dvjnjd26ww1xi::::res://image/background/sea/5.png<>uid://d0ugpi0sfy0ds::::res://image/background/sea/4.png<>uid://dsci3ki4lnh73::::res://image/Sprite-0001.png<>uid://c1fk81638t5qp::::res://area_2d.gd<>uid://yuw2s1fccx8l::::res://minigame.tscn<>uid://c5i3yj4f2s3b7::::res://coin.tscn<>uid://bnr6ppau30y2q::::res://shop_area.tscn
+fishing_area.gd::GDScript::8977661804429876264::1780234698::0::1::::<>Area2D<><>0<>0<><>::
+icon.svg::CompressedTexture2D::3022411016738243317::1780234698::1780234698::1::::<><><>0<>0<>70df8c941f112bcbb27490d99350e818<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+inventory.gd::GDScript::5282425334676619412::1780234698::0::1::::Inv<>Resource<><>0<>0<><>::
+inv_ui.tscn::PackedScene::2993527412735418036::1780234698::0::1::::<><><>0<>0<><>::uid://8iquvmj00lk7::::res://itemdata/inv_ui.gd<>uid://dsgal13v40ata::::res://itemdata/invbox.png<>uid://yiyid3iepn8t::::res://inv_ui_slot.tscn
+inv_ui_slot.gd::GDScript::1357030005897635797::1780234698::0::1::::<>Panel<><>0<>0<><>::
+inv_ui_slot.tscn::PackedScene::1702518964716898273::1780234698::0::1::::<><><>0<>0<><>::uid://tlmc6lq1x7b2::::res://inv_ui_slot.gd<>uid://bn4vl3d64xufj::::res://itemdata/inventory_box.png
+item_data.tscn::PackedScene::489342874768261453::1780234698::0::1::::<><><>0<>0<><>::uid://be81yyrwaia2g::::res://item_data.gd
+Jasper_Angle_Fish.png::CompressedTexture2D::6717369919455794235::1780234698::1780234698::1::::<><><>0<>0<>ece63b32d0d2e74db6520c67ccc84ab7<>res://.godot/imported/Jasper_Angle_Fish.png-ddef4dd0660ce522a96cde8513823c68.ctex::
+label.gd::GDScript::8759940249003653152::1780234698::0::1::::<>Label<><>0<>0<><>::
+minigame.gd::GDScript::6986323390510645204::1780234698::0::1::::<>Node2D<><>0<>0<><>::
+minigame.tscn::PackedScene::1727204778485440665::1780234698::0::1::::<><><>0<>0<><>::uid://c6shywyd75ubs::::res://minigame.gd<>uid://bbiupif40gi5x::::res://gobal/Sprite-0005.png<>uid://h1kcpmpa4i36::::res://gobal/Sprite-0003.png
+miss1.tres::TileSet::7934458188014758120::1780234698::0::1::::<><><>0<>0<><>::uid://ugocffqt61n::::res://image/background/Solaria Demo Tiles.png
+miss2.tres::TileSet::634108945290719046::1780234698::0::1::::<><><>0<>0<><>::uid://ugocffqt61n::::res://image/background/Solaria Demo Tiles.png
+new_script.gd::GDScript::7687279943805740133::1780234698::0::1::::item<>Resource<><>0<>0<><>::
+node_2d_test.gd::GDScript::8299036403154938072::1780234698::0::1::::<>Node2D<><>0<>0<><>::
+options.tscn::PackedScene::6655029427778453436::1780234698::0::1::::<><><>0<>0<><>::uid://d1mowonf07wv5::::res://image/background/KiwiSoda.ttf<>uid://he5wh4sywqhf::::res://audiocontrol.gd
+shopmenu.gd::GDScript::3848424745796834586::1780234698::0::1::::<>StaticBody2D<><>0<>0<><>::
+shopmenu.tscn::PackedScene::2015577941318533866::1780234698::0::1::::<><><>0<>0<><>::uid://bil6nwni8w4wd::::res://itemdata/shoparrowbuttom.png<>uid://bu3g81iynparq::::res://shopmenu.gd<>uid://cxc767m7sh1hf::::res://itemdata/coin.png<>uid://dasds6ypgbaeb::::res://gobal/fishing rod.png
+shop_area.gd::GDScript::4569090820435486360::1780234698::0::1::::<>Node2D<><>0<>0<><>::
+shop_area.tscn::PackedScene::3335879875288261390::1780234698::0::1::::<><><>0<>0<><>::uid://b6dki1swg3o4g::::res://shop_area.gd<>uid://3ymjk8x5r1sw::::res://shopmenu.tscn
+tile_map.tscn::PackedScene::6714689021794739135::1780234698::0::1::::<><><>0<>0<><>::uid://ugocffqt61n::::res://image/background/Solaria Demo Tiles.png
+::res://body script/::1780234700
+item.tscn::PackedScene::2002605412393986621::1780234700::0::1::::<><><>0<>0<><>::uid://d11828esqu5ol::::res://body script/item.gd
+player.gd::GDScript::5851196076676794688::1780234700::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::6031347315121280097::1780234700::0::1::::<><><>0<>0<><>::uid://cpmmlyiyl6121::::res://body script/player.gd<>uid://b5465i78qruy0::::res://itemdata/playerinv.tres<>uid://bumkr7j1ymuwg::::res://image/player/box catanimaion-Sheet-Sheet-Sheet.png<>uid://dasds6ypgbaeb::::res://gobal/fishing rod.png<>uid://cr0dovnw6ofkf::::res://gobal/fishing rod3.png<>uid://ucrbbolwcmyd::::res://gobal/fishing rod2.png<>uid://biwc7u0tf5fjo::::res://inv_ui.tscn
+::res://fish.web/::1780236942
+index.apple-touch-icon.png::CompressedTexture2D::1559065367328847848::1780236813::1780236984::1::::<><><>0<>0<>a86e43f0d879a901e2e9621f3a91f881<>res://.godot/imported/index.apple-touch-icon.png-0ca313d78ee2d3077fec3da661f765c9.ctex::
+index.icon.png::CompressedTexture2D::4016992024407691683::1780236813::1780236984::1::::<><><>0<>0<>e3bc302d4dc7f193758f30481837c78d<>res://.godot/imported/index.icon.png-09ec1e6e673a2bc12f6456b277a2dbba.ctex::
+index.png::CompressedTexture2D::8131425194981321060::1780236813::1780236984::1::::<><><>0<>0<>47dfcf355020ed36c2b7179509e1f3d4<>res://.godot/imported/index.png-441c6d57a80708bc9a418be3987ca584.ctex::
+::res://gobal/::1780234700
+fishing rod2.png::CompressedTexture2D::1408939677619596339::1780234700::1780234700::1::::<><><>0<>0<>8ebb937c0feb8163e65c1999ac1397bb<>res://.godot/imported/fishing rod2.png-aafccf5968a72d6c23690ce8c0e5df19.ctex::
+fishing rod3.png::CompressedTexture2D::6017869429291587533::1780234700::1780234700::1::::<><><>0<>0<>3c10233cc0fbb2eef6ccac8b304002bb<>res://.godot/imported/fishing rod3.png-8f6147166ba9d802d979773bfd72244f.ctex::
+fishing rod.png::CompressedTexture2D::7196636811909715921::1780234700::1780234700::1::::<><><>0<>0<>d0a5bd95e0b662f7cef8c6bcfae48f44<>res://.godot/imported/fishing rod.png-091419b855cdbb1d90c5bb5f2d2c7715.ctex::
+gobal_player.gd::GDScript::785026213472377233::1780234700::0::1::::<>Node<><>0<>0<><>::
+Sprite-0003.png::CompressedTexture2D::545607275657841855::1780234700::1780234700::1::::<><><>0<>0<>e2d500b6d978af47642c2086ad87cadc<>res://.godot/imported/Sprite-0003.png-44588b24c1aa03199dbd464333eea37b.ctex::
+Sprite-0005.png::CompressedTexture2D::2474366105389619411::1780234700::1780234700::1::::<><><>0<>0<>b1e7c4e468c6d51c410c5d8833f0c6d5<>res://.godot/imported/Sprite-0005.png-a79802dd243eed622b1c6ba8d1e37f2b.ctex::
+::res://image/::1780234700
+Sprite-0001.png::CompressedTexture2D::8427326269168258352::1780234700::1780234700::1::::<><><>0<>0<>1fe3b79bff0694c43b132aac8672a849<>res://.godot/imported/Sprite-0001.png-aeb27b12cb9e07889a3be8af7de27b78.ctex::
+::res://image/background/::1780234700
+3524659.png::CompressedTexture2D::5556328500846523133::1780234700::1780234700::1::::<><><>0<>0<>3e4d740df14f0f5458519c34577b1513<>res://.godot/imported/3524659.png-f4c08c90fec429e8c6e94748f7397a35.ctex::
+Bee Swarm Simulator OST  - Pop Star.mp3::AudioStreamMP3::7210518845117163671::1780234700::1780234700::1::::<><><>0<>0<>f5513b613faa3939c030ab921925cb01<>res://.godot/imported/Bee Swarm Simulator OST  - Pop Star.mp3-793627665cf868c565cad99dadf2e251.mp3str::
+crashout.mp3::AudioStreamMP3::3868139523929696111::1780234700::1780234700::1::::<><><>0<>0<>0b65b79130217dcc2093be60602777c9<>res://.godot/imported/crashout.mp3-9dea8a81cc0b1daddd382a46e009368c.mp3str::
+distortion.gdshader::Shader::8028454967113990502::1780234700::0::1::::<><><>0<>0<><>::
+KiwiSoda.ttf::FontFile::9009834599752729520::1780234700::1780234700::1::::<><><>0<>0<>5e8df5727ea2b25c6cef6543942586d0<>res://.godot/imported/KiwiSoda.ttf-5e1e4631ca908699659cc67670e2b25d.fontdata::
+node_2d test.tscn::PackedScene::6516013254673282562::1780234700::0::1::::<><><>0<>0<><>::uid://dqid6gd7mupho::::res://node_2d_test.gd<>uid://bjccwyb2iqf3j::::res://icon.svg<>uid://d0531pw8c0hhw::::res://fishing_area.gd<>uid://cr6vn553ugut2::::res://body script/player.tscn
+simple-fishing-background-free-vector.png::CompressedTexture2D::9191267727852744416::1780234700::1780234700::1::::<><><>0<>0<>1d4ada5590830b880185595ad3afba17<>res://.godot/imported/simple-fishing-background-free-vector.png-9e662e96e5c559308f227cb7e32b148b.ctex::
+Solaria Demo Tiles.png::CompressedTexture2D::41676971172527221::1780234700::1780234700::1::::<><><>0<>0<>92c76a55d174d57ff14e10804a4eb84d<>res://.godot/imported/Solaria Demo Tiles.png-5ac73a4515befe602320ad621901d1bc.ctex::
+::res://image/background/sea/::1780234700
+2.png::CompressedTexture2D::616832715705769896::1780234700::1780234700::1::::<><><>0<>0<>c3b933582ff0134e765d0f541a2d1b3b<>res://.godot/imported/2.png-7724b154e6a5d2b6f543459b49382c95.ctex::
+3.png::CompressedTexture2D::4428797149071135401::1780234700::1780234700::1::::<><><>0<>0<>7af0774b1332c5561f1f38b1a2d99faa<>res://.godot/imported/3.png-2dba90f50f0c5a98b7ba753962618f79.ctex::
+4.png::CompressedTexture2D::8955662245608883692::1780234700::1780234700::1::::<><><>0<>0<>daa39aa6d257e0ba2e905844ba5a7b5f<>res://.godot/imported/4.png-105f74600679558720476f42a89366a5.ctex::
+5.png::CompressedTexture2D::8652612761034192046::1780234700::1780234700::1::::<><><>0<>0<>f8a45a8d7f2887872723354be8946942<>res://.godot/imported/5.png-dbbf84c11d4265dd6fdf883ce5a2df79.ctex::
+6.png::CompressedTexture2D::1752666965003661830::1780234700::1780234700::1::::<><><>0<>0<>bb14a01c6c83228d6f2bff44e8cbd0e3<>res://.godot/imported/6.png-8d88f0bf3364d26138b87f7515117df8.ctex::
+Astral_Jelly.png::CompressedTexture2D::4826280763070137894::1780234700::1780234700::1::::<><><>0<>0<>3aa760c2d9d233cfc48afc902c41c758<>res://.godot/imported/Astral_Jelly.png-98975cbec79c3d6263e229c6b4a9cc64.ctex::
+Azure_Feather_Fish.png::CompressedTexture2D::5985085244521855440::1780234700::1780234700::1::::<><><>0<>0<>d26a76cc3ef92e705af259d293a06fc7<>res://.godot/imported/Azure_Feather_Fish.png-1c28eb2ce449a827647a968213a697a3.ctex::
+Beryll_Angle_Fish.png::CompressedTexture2D::6414854773868215030::1780234700::1780234700::1::::<><><>0<>0<>905f52e2618cfc2efd58483cddf32844<>res://.godot/imported/Beryll_Angle_Fish.png-98a213ef2a6e6a651fd724368ac4244d.ctex::
+Black_Steel_Urchin.png::CompressedTexture2D::6164191734197416729::1780234700::1780234700::1::::<><><>0<>0<>66fe6ed1a41f8926e52d40f89a60442f<>res://.godot/imported/Black_Steel_Urchin.png-825179d1f7f075e09dc994e5f3c33f41.ctex::
+Blue_Cave_Guppy.png::CompressedTexture2D::2025435120504971537::1780234700::1780234700::1::::<><><>0<>0<>5aa71c5f140e2feccf23042772e5f710<>res://.godot/imported/Blue_Cave_Guppy.png-2a7693cfbd209d03651e05802d89034b.ctex::
+Bottom_Tracer.png::CompressedTexture2D::6410071030805059246::1780234700::1780234700::1::::<><><>0<>0<>28e3bd0e519669fc3f362e88842fd2b3<>res://.godot/imported/Bottom_Tracer.png-8b452d61c2376c9b8d406ff31865d597.ctex::
+Bright_Lava_Eater.png::CompressedTexture2D::2511956964095267953::1780234700::1780234700::1::::<><><>0<>0<>b445ae337fa416d6715e472ed32e0823<>res://.godot/imported/Bright_Lava_Eater.png-0ce35feb208bdae0505dc17969b7a740.ctex::
+Brown_Dune_Tail.png::CompressedTexture2D::2404424565417905618::1780234700::1780234700::1::::<><><>0<>0<>97d8c61f88a22a0f235effff80d14a93<>res://.godot/imported/Brown_Dune_Tail.png-51f07270c86d6730742a6ffb6dda2229.ctex::
+Dagger_Fin.png::CompressedTexture2D::3775241225652680532::1780234700::1780234700::1::::<><><>0<>0<>890bb81206f332cee433636154a0086b<>res://.godot/imported/Dagger_Fin.png-31b01d0bca2e09b69785bc7be770c78e.ctex::
+Elder_Dragonfish.png::CompressedTexture2D::2146934485263351383::1780234700::1780234700::1::::<><><>0<>0<>e3ae40d3b9ebce34d1f84fb67725ca88<>res://.godot/imported/Elder_Dragonfish.png-6f5688fe265b139952224ed3d1f4388b.ctex::
+Jasper_Angle_Fish.png::CompressedTexture2D::8199812887817891921::1780234700::1780234700::1::::<><><>0<>0<>9f77d633c0c43c248458ab8613b0a87e<>res://.godot/imported/Jasper_Angle_Fish.png-5067b77ef2f09b3ba15def7746eb33e9.ctex::
+::res://image/player/::1780234700
+box catanimaion-Sheet-Sheet-Sheet.png::CompressedTexture2D::3815609313790846882::1780234700::1780234700::1::::<><><>0<>0<>87fcfbc0baf31bde1693650b9b8203d8<>res://.godot/imported/box catanimaion-Sheet-Sheet-Sheet.png-7303f0d5c4c046c48de4b7857382b636.ctex::
+::res://itemdata/::1780234700
+coin.png::CompressedTexture2D::6393313530711795763::1780234700::1780234700::1::::<><><>0<>0<>38003ba1e90bca250c180158082e0b89<>res://.godot/imported/coin.png-2f765d53fd20153cd4c3b33a7c7af4fd.ctex::
+fish1.tres::Resource/item::3864387770356628207::1780234700::0::1::::<><><>0<>0<><>::uid://ca05eyy2ircyg::::res://image/background/sea/Astral_Jelly.png<>uid://dhr1m3pgc634d::::res://new_script.gd
+fish2.tres::Resource/item::3743788390357151517::1780234700::0::1::::<><><>0<>0<><>::uid://ct28lp41c4vft::::res://image/background/sea/Black_Steel_Urchin.png<>uid://dhr1m3pgc634d::::res://new_script.gd
+fish3.tres::Resource/item::404845114567905019::1780234700::0::1::::<><><>0<>0<><>::uid://cxnnyrmnovife::::res://image/background/sea/Beryll_Angle_Fish.png<>uid://dhr1m3pgc634d::::res://new_script.gd
+fish4.tres::Resource/item::4143119206685967671::1780234700::0::1::::<><><>0<>0<><>::uid://dhr1m3pgc634d::::res://new_script.gd<>uid://do3byqu5j5p0d::::res://image/background/sea/Jasper_Angle_Fish.png
+fish5.tres::Resource/item::5256667169853275870::1780234700::0::1::::<><><>0<>0<><>::uid://5t8xycy0g2i2::::res://image/background/sea/Elder_Dragonfish.png<>uid://dhr1m3pgc634d::::res://new_script.gd
+fish6.tres::Resource/item::6504136556926156889::1780234700::0::1::::<><><>0<>0<><>::uid://dhr1m3pgc634d::::res://new_script.gd<>uid://bb12tghg7o5w4::::res://image/background/sea/Bright_Lava_Eater.png
+fish7.tres::Resource/item::5736229963705218687::1780234700::0::1::::<><><>0<>0<><>::uid://dhr1m3pgc634d::::res://new_script.gd<>uid://crjhqkmb0snoa::::res://image/background/sea/Azure_Feather_Fish.png
+invbox.png::CompressedTexture2D::8435068556676706878::1780234700::1780234700::1::::<><><>0<>0<>0bcd0a7776c38d387fd4a21ac6f5dc66<>res://.godot/imported/invbox.png-8ed3ead7982f6e8fee038bbe31747b11.ctex::
+inventory_box.png::CompressedTexture2D::3360038783172701611::1780234700::1780234700::1::::<><><>0<>0<>f432417239a6d3fcb1fb8795f2499dde<>res://.godot/imported/inventory_box.png-9850cf0bf4a652d84d60dd1f50741637.ctex::
+inv_ui.gd::GDScript::2333755171821237144::1780234700::0::1::::<>Control<><>0<>0<><>::
+playerinv.tres::Resource/Inv::4553889219436698305::1780234700::0::1::::<><><>0<>0<><>::uid://dhr1m3pgc634d::::res://new_script.gd<>uid://chi31kfixy8a7::::res://inventory.gd
+remove_box.png::CompressedTexture2D::8150595853296519674::1780234700::1780234700::1::::<><><>0<>0<>b0ba4d7fa69cfa9b9a576b4189ec2d12<>res://.godot/imported/remove_box.png-965917ef42126d695756658523dbaf23.ctex::
+shoparrowbuttom.png::CompressedTexture2D::2972546206193183715::1780234700::1780234700::1::::<><><>0<>0<>1ad229a0176a8d765ceb26085a317eda<>res://.godot/imported/shoparrowbuttom.png-5763bc1c8c60dbffb679319c5b5d409c.ctex::
+shopbuttom.png::CompressedTexture2D::399759286114773941::1780234700::1780234700::1::::<><><>0<>0<>1e82f2a0332a09fe943ce6c8380b3232<>res://.godot/imported/shopbuttom.png-16707850c22c38eda1996a9b39d5a041.ctex::

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="item" format=3 uid="uid://cnyw4tcawkcnn"]
+
+[ext_resource type="Script" uid="uid://dhr1m3pgc634d" path="res://new_script.gd" id="1_7ofkt"]
+[ext_resource type="Texture2D" uid="uid://crjhqkmb0snoa" path="res://image/background/sea/Azure_Feather_Fish.png" id="1_h2fot"]
+
+[resource]
+script = ExtResource("1_7ofkt")
+image = ExtResource("1_h2fot")
+num = 10
+metadata/_custom_type_script = "uid://dhr1m3pgc634d"

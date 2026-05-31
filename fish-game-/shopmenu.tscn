@@ -1,0 +1,122 @@
+[gd_scene format=3 uid="uid://3ymjk8x5r1sw"]
+
+[ext_resource type="Texture2D" uid="uid://bil6nwni8w4wd" path="res://itemdata/shoparrowbuttom.png" id="1_10ml0"]
+[ext_resource type="Script" uid="uid://bu3g81iynparq" path="res://shopmenu.gd" id="1_rcxjb"]
+[ext_resource type="Texture2D" uid="uid://cxc767m7sh1hf" path="res://itemdata/coin.png" id="2_ljx4j"]
+[ext_resource type="Texture2D" uid="uid://dasds6ypgbaeb" path="res://gobal/fishing rod.png" id="4_t4gof"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rcxjb"]
+bg_color = Color(0.03137255, 0.03137255, 0.03137255, 0)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t4gof"]
+bg_color = Color(0.03137255, 0.03137255, 0.03137255, 0)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7decd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_10ml0")
+}],
+"loop": true,
+"name": &"upgatearrow",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_t4gof")
+}],
+"loop": true,
+"name": &"upgatecircle",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7decd"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="shopmenu" type="StaticBody2D" unique_id=783924605]
+visible = false
+script = ExtResource("1_rcxjb")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=594199394]
+offset_right = 52.782703
+offset_bottom = 64.205185
+scale = Vector2(3.3912625, 1.7911326)
+color = Color(0.11305008, 0.2624338, 0.260832, 1)
+
+[node name="Button" type="Button" parent="ColorRect" unique_id=979454011]
+layout_mode = 0
+offset_left = 0.8846263
+offset_top = 39.639725
+offset_right = 10.615517
+offset_bottom = 63.088585
+theme_override_colors/font_color = Color(0.8650072, 0.8761159, 0.88884234, 1)
+theme_override_colors/font_disabled_color = Color(0.22190636, 0.084476806, 0.004980486, 0.5019608)
+theme_override_styles/normal = SubResource("StyleBoxFlat_rcxjb")
+
+[node name="Sprite2D" type="Sprite2D" parent="ColorRect/Button" unique_id=1268405500]
+position = Vector2(5.012883, 11.724427)
+scale = Vector2(-0.54153174, -0.87309134)
+texture = ExtResource("1_10ml0")
+
+[node name="Button2" type="Button" parent="ColorRect" unique_id=1670829914]
+layout_mode = 0
+offset_left = 12.089892
+offset_top = 40.19803
+offset_right = 21.820782
+offset_bottom = 63.64689
+theme_override_colors/font_color = Color(0.8650072, 0.8761159, 0.88884234, 1)
+theme_override_colors/font_disabled_color = Color(0.22190636, 0.084476806, 0.004980486, 0.5019608)
+theme_override_styles/normal = SubResource("StyleBoxFlat_t4gof")
+
+[node name="Sprite2D" type="Sprite2D" parent="ColorRect/Button2" unique_id=1294660431]
+position = Vector2(4.718006, 11.724428)
+rotation = 3.1415927
+scale = Vector2(0.54153174, 0.8730914)
+texture = ExtResource("1_10ml0")
+flip_h = true
+
+[node name="coin" type="Sprite2D" parent="." unique_id=1069937745]
+position = Vector2(158, 56)
+scale = Vector2(0.050342724, 0.050342724)
+texture = ExtResource("2_ljx4j")
+
+[node name="icon" type="AnimatedSprite2D" parent="." unique_id=1013778749]
+position = Vector2(39, 33)
+scale = Vector2(2.7931585, 2.7931585)
+sprite_frames = SubResource("SpriteFrames_7decd")
+animation = &"upgatecircle"
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=425308327]
+offset_left = 91.0
+offset_top = 82.0
+offset_right = 165.0
+offset_bottom = 111.0
+color = Color(0.654902, 1, 0.65882355, 1)
+
+[node name="buybuttom" type="Button" parent="." unique_id=215842736]
+offset_left = 91.0
+offset_top = 83.0
+offset_right = 111.988365
+offset_bottom = 91.0
+scale = Vector2(3.5257635, 3.5257635)
+theme_override_styles/normal = SubResource("StyleBoxFlat_7decd")
+
+[node name="PriceLabel" type="RichTextLabel" parent="." unique_id=800709449]
+offset_left = 73.0
+offset_top = 38.0
+offset_right = 113.0
+offset_bottom = 78.0
+scale = Vector2(0.9273204, 0.5099845)
+text = "100"
+
+[connection signal="pressed" from="ColorRect/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ColorRect/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="buybuttom" to="." method="_on_buybuttom_pressed"]

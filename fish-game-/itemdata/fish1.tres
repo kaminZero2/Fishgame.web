@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="item" format=3 uid="uid://bvb65wxth1wqx"]
+
+[ext_resource type="Texture2D" uid="uid://ca05eyy2ircyg" path="res://image/background/sea/Astral_Jelly.png" id="1_8dvll"]
+[ext_resource type="Script" uid="uid://dhr1m3pgc634d" path="res://new_script.gd" id="2_6o670"]
+
+[resource]
+script = ExtResource("2_6o670")
+image = ExtResource("1_8dvll")
+num = 25
+metadata/_custom_type_script = "uid://dhr1m3pgc634d"
